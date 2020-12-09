@@ -1,0 +1,9 @@
+[submodule "assemblyscript"]
+	path = assemblyscript
+	url = https://github.com/AssemblyScript/assemblyscript.git
+[submodule "wabt"]
+	path = wabt
+	url = https://github.com/WebAssembly/wabt.git
+[submodule "binaryen"]
+	path = binaryen
+	url = https://github.com/WebAssembly/binaryen.git
