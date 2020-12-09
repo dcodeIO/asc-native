@@ -21,12 +21,12 @@ Building on Windows
 -------------------
 
 **Why?** Because unnecessary complexity and stacking layers is kinda the theme here.
-Just Clang/LLVM, though, so should work anywhere with -T and -A amended.
+May also work on *nixes with -T and -A amended.
 
 Step 0: Make sure you have
 
 * Clang build tools for Visual Studio. I used VS 2019 and checkboxed the feature.
-* CMake & LLVM
+* CMake, Clang/LLVM, Node.js
 * All the submodules
 
 Step 1: Build the Binaryen submodule (32-bit)
@@ -58,7 +58,7 @@ npm install
 npm run asbuild:untouched
 ```
 
-Step 4: Transpile the AssemblyScript compiler to C
+Step 4: Transpile the AssemblyScript compiler compiled to Wasm to C
 
 ```sh
 wabt/bin/wasm2c assemblyscript/out/assemblyscript.untouched.wasm -o src/assemblyscript.c
